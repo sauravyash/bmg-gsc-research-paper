@@ -1,0 +1,37 @@
+c0022480  out 0x21, eax
+c0022482  add al, byte ptr [eax]
+c0022484  call 0xc000126b
+c0022489  pop eax
+c002248a  push 0x94a90
+c002248f  push eax
+c0022490  lea eax, [0x94a70]
+c0022496  push 0x2222c
+c002249b  call 0xc000126b
+c00224a0  pop eax
+c00224a1  call 0xc0001965
+c00224a6  add esp, 0x14
+c00224a9  mov ebx, eax
+c00224ab  test eax, eax
+c00224ad  je 0xc00224c1
+c00224af  push 0x290009
+c00224b4  push 2
+c00224b6  call 0xc0001661
+c00224bb  pop edx
+c00224bc  mov eax, ebx
+c00224be  pop ecx
+c00224bf  jmp 0xc00224e2
+c00224c1  push 0x29000a
+c00224c6  push 6
+c00224c8  call 0xc0001661
+c00224cd  push dword ptr [0x94b7c]
+c00224d3  push 0x94a90
+c00224d8  call 0xc0001957
+c00224dd  add esp, 0x10
+c00224e0  xor eax, eax
+c00224e2  mov ecx, dword ptr [0x1000]
+c00224e8  xor dword ptr [ebp - 8], ecx
+c00224eb  je 0xc00224f2
+c00224ed  call 0xc00017d2
+c00224f2  mov ebx, dword ptr [ebp - 4]
+c00224f5  leave 
+c00224f6  ret 

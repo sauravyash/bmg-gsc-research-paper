@@ -1,0 +1,33 @@
+### kernel: 110592 bytes (0x1b000)
+linear decode: 12003 instructions
+
+== STRING XREFS ==
+str@0x2176 '[^_]'
+    c0024167  jmp 0xc0024176
+    c002416f  jmp 0xc0024176
+str@0x49a8 'X[^_]'
+    c0026935  jne 0xc00269a8
+    c0026955  je 0xc00269a8
+    c002695e  je 0xc00269a8
+str@0x6987 '[^_]'
+    c0028969  jmp 0xc0028987
+    c0028970  jmp 0xc0028987
+str@0x724b '[^_]'
+    c00291fd  jne 0xc002924b
+    c0029237  je 0xc002924b
+str@0x79f8 'SWVU'
+    c00269c6  call 0xc00299f8
+str@0x7a9c ']^_['
+    c0029a4c  jmp 0xc0029a9c
+    c0029a6f  jmp 0xc0029a9c
+    c0029a80  jmp 0xc0029a9c
+str@0x7aa1 'SWVU'
+    c00295ae  call 0xc0029aa1
+str@0x7b54 ']^_['
+    c0029af9  jmp 0xc0029b54
+    c0029b1f  jmp 0xc0029b54
+    c0029b34  jmp 0xc0029b54
+
+== TARGET IMMEDIATES ==
+
+== MEM-RELATED STRINGS WITH CONTEXT ==

@@ -1,0 +1,52 @@
+### fsp: 122880 bytes (0x1e000)
+linear decode: 33761 instructions
+
+== STRING XREFS ==
+str@0x3e33 '[^_]'
+    c0025e1f  je 0xc0025e33
+str@0x3e6c '[^_]'
+    c0025e58  je 0xc0025e6c
+str@0x9f81 'Z[^_]'
+    c002bf70  jmp 0xc002bf81
+str@0xaa11 '[^_]'
+    c002c97c  jmp 0xc002ca11
+    c002c9e1  jmp 0xc002ca11
+str@0x10207 '[^_]'
+    c003217c  jmp 0xc0032207
+str@0x1046f 'WSjg'
+    c0032400  jmp 0xc003246f
+str@0x105b6 '[^_]'
+    c00325b2  jmp 0xc00325b6
+str@0x11e5a '[^_]'
+    c0033e41  jmp 0xc0033e5a
+str@0x1a027 '[^_]'
+    c003c000  je 0xc003c027
+    c003c01d  jmp 0xc003c027
+
+== TARGET IMMEDIATES ==
+c002709f  mov dword ptr [ebp - 0x800], 0x471d00   ; IntelGraphicsMem OROM
+c0027199  mov dword ptr [ebp - 0x79c], 0xd71e56   ; SHA384#3 off
+c00271b7  mov dword ptr [ebp - 0x790], 0xe71d00   ; device block end
+c00271f3  mov dword ptr [ebp - 0x778], 0xf71f18   ; device block start
+c0027d3a  mov eax, 0x800   ; IntelGraphicsMem OROM
+c0027da8  cmp eax, 0x800   ; IntelGraphicsMem OROM
+c002959f  add esi, 0x800   ; IntelGraphicsMem OROM
+c0029a9f  and eax, 0x800   ; IntelGraphicsMem OROM
+c0029c0f  push 0x800   ; IntelGraphicsMem OROM
+c002a742  push 0x800   ; IntelGraphicsMem OROM
+c002bf72  add edi, 0x800   ; IntelGraphicsMem OROM
+c0030972  and eax, 0x800   ; IntelGraphicsMem OROM
+c0038e87  add eax, 0x800   ; IntelGraphicsMem OROM
+c00390b0  add eax, 0x800   ; IntelGraphicsMem OROM
+c00392f2  lea edx, [esi + 0x520]   ; RSA sig off
+c0039312  lea eax, [ebx + eax + 0x800]   ; IntelGraphicsMem OROM
+c0039548  lea eax, [ebx + eax + 0x800]   ; IntelGraphicsMem OROM
+c0039eec  push 0x6c0   ; entry-table start
+c0039f07  push 0x6c0   ; entry-table start
+c0039f48  push 0x6c0   ; entry-table start
+c0039f70  push 0x6c0   ; entry-table start
+c0039fbd  push 0x6c0   ; entry-table start
+c003b398  mov dword ptr [ebx + 0x730], 0xff   ; SHA384#2 off
+c003beee  cmp dword ptr [ebp - 0xb8], 0x800   ; IntelGraphicsMem OROM
+
+== MEM-RELATED STRINGS WITH CONTEXT ==

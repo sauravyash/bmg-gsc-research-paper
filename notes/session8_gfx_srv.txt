@@ -1,0 +1,24 @@
+### gfx_srv: 24576 bytes (0x6000)
+linear decode: 7613 instructions
+
+== STRING XREFS ==
+str@0x2900 'jkWP'
+    c00248e0  jns 0xc0024900
+str@0x2d7e '[^_]'
+    c0024d12  je 0xc0024d7e
+    c0024d1a  jne 0xc0024d7e
+    c0024d28  ja 0xc0024d7e
+str@0x4070 'ZY[^]'
+    c0026069  je 0xc0026070
+str@0x4f52 '[^_]'
+    c0026f2b  je 0xc0026f52
+    c0026f48  jmp 0xc0026f52
+str@0x5530 '/rpfs/time_data'
+    c00274b9  jae 0xc0027530
+
+== TARGET IMMEDIATES ==
+c0023de9  cmp eax, 0x800   ; IntelGraphicsMem OROM
+c00256eb  cmp dword ptr [ebp - 0xb8], 0x800   ; IntelGraphicsMem OROM
+c0026bbc  cmp eax, 0x800   ; IntelGraphicsMem OROM
+
+== MEM-RELATED STRINGS WITH CONTEXT ==

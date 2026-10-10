@@ -1,0 +1,11 @@
+### pm: 12288 bytes (0x3000)
+linear decode: 2847 instructions
+
+== STRING XREFS ==
+str@0x209b '[^_]'
+    c0024074  je 0xc002409b
+    c0024091  jmp 0xc002409b
+
+== TARGET IMMEDIATES ==
+
+== MEM-RELATED STRINGS WITH CONTEXT ==

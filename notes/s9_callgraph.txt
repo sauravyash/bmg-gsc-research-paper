@@ -1,0 +1,45 @@
+total call targets: 618
+imports: ['0xc000106f', '0xc0001078', '0xc000109a', '0xc000109f', '0xc00010c2', '0xc00010cc', '0xc0001130', '0xc000113a', '0xc000113f', '0xc000114e', '0xc0001153', '0xc0001167', '0xc00011b7', '0xc00011ee', '0xc00011f3', '0xc000121b', '0xc000123e', '0xc0001261', '0xc0001266', '0xc000126b', '0xc0001275', '0xc000127a', '0xc000127f', '0xc00012b5', '0xc00012ba', '0xc000130e', '0xc000134a', '0xc00013f9', '0xc0001616', '0xc0001661', '0xc000166a', '0xc000166f', '0xc0001674', '0xc0001679', '0xc0001690', '0xc0001695', '0xc000169a', '0xc000169f', '0xc00016a4', '0xc00016a9', '0xc00016ae', '0xc00016db', '0xc000170b', '0xc00017d2', '0xc00018b7', '0xc00018d0', '0xc00018df', '0xc000194d', '0xc0001952', '0xc0001957', '0xc0001965', '0xc000198d', '0xc0001997', '0xc0001a37', '0xc0001a4b', '0xc0001a50', '0xc0001a5a', '0xc0001a91', '0xc0001aa5', '0xc0001b58', '0xc0001b62', '0xc0001b67', '0xc0001bcf', '0xc0001cf0', '0xc0001cfa', '0xc0001cff', '0xc0001d04', '0xc0001d09', '0xc0001d0e', '0xc0001d13', '0xc0001d18', '0xc0001d1d', '0xc0001d4a']
+
+=== fn@0xc0023674 (MRC loader) ===
+c0023674  push ebp
+c0023675  mov ebp, esp
+c0023677  sub esp, 0xff04
+c002367d  mov eax, dword ptr [0x1000]
+c0023682  mov dword ptr [ebp - 4], eax
+c0023685  xor eax, eax
+c0023687  push 0x7f80
+c002368c  lea eax, [ebp - 0xff04]
+c0023692  push eax
+c0023693  push 0x10031000
+c0023698  push 0x3c2ab
+c002369d  call 0xc00235b0
+c00236a2  push 0x7f80
+c00236a7  lea eax, [ebp - 0x7f84]
+c00236ad  push eax
+c00236ae  push 0x10007000
+c00236b3  push 0x3c2be
+c00236b8  call 0xc00235b0
+c00236bd  add esp, 0x20
+c00236c0  mov eax, dword ptr [0x1000]
+c00236c5  xor dword ptr [ebp - 4], eax
+c00236c8  je 0xc00236cf
+c00236ca  call 0xc00017d2
+c00236cf  leave 
+c00236d0  ret 
+
+=== caller ctx @0xc0022717 ===
+c00226b7  add byte ptr [eax + 0x52], ch
+c00226ba  rol byte ptr [ebx], 0
+c00226bd  mov dword ptr [ebp - 0x30], eax
+c00226c0  call 0xc00225b4
+c00226c5  add esp, 0xc
+c00226c8  mov eax, dword ptr [0x1000]
+c00226cd  xor dword ptr [ebp - 0xc], eax
+c00226d0  je 0xc00226d7
+c00226d2  call 0xc00017d2
+c00226d7  lea esp, [ebp - 8]
+c00226da  pop ebx
+c00226db  pop esi
+c00226dc  pop ebp
+c00226dd  ret 

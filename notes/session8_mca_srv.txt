@@ -1,0 +1,14 @@
+### mca_srv: 16384 bytes (0x4000)
+linear decode: 5516 instructions
+
+== STRING XREFS ==
+str@0x395e '[^_]'
+    c0025937  je 0xc002595e
+    c0025954  jmp 0xc002595e
+
+== TARGET IMMEDIATES ==
+c00229a8  mov eax, 0x800   ; IntelGraphicsMem OROM
+c0024057  mov eax, 0x800   ; IntelGraphicsMem OROM
+c00254bd  mov eax, 0x800   ; IntelGraphicsMem OROM
+
+== MEM-RELATED STRINGS WITH CONTEXT ==
